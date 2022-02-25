@@ -1,0 +1,9 @@
+label: "qe6.7_pw_default"
+input_plugin: "quantumespresso.pw"
+on_computer: true
+computer: "HPC_Lobster"
+remote_abs_path: "/c/codes/qe/6.7/gcc/10.2.0/bin/pw.x"
+prepend_text: |
+   module purge
+   module load qe
+append_text: |

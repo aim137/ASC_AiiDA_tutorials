@@ -1,0 +1,52 @@
+#<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+#<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+STEP 1
+verdi computer setup --config computer.yml
+
+#<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+#<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+STEP 2
+verdi computer configure ssh HPC_Lobster
+
+Info: enter "?" for help
+Info: enter "!" to ignore the default and set no value
+
+#All default values except for "User name" and "SSH key file"
+
+User name [aim]: martin
+Port number [22]: 2222
+Look for keys [True]: False
+SSH key file []: !
+Connection timeout in s [60]: 
+Allow ssh agent [True]: 
+SSH proxy command []: 
+Compress file transfers [True]: 
+GSS auth [False]: 
+GSS kex [False]: 
+GSS deleg_creds [False]: 
+GSS host [localhost]: 
+Load system host keys [True]: 
+Key policy (RejectPolicy, WarningPolicy, AutoAddPolicy) [RejectPolicy]: 
+Use login shell when executing command [True]: 
+Connection cooldown time (s) [30.0]: 
+
+Info: Configuring computer HPC_Lobster for user ialliati01@qub.ac.uk.
+Success: HPC_Lobster successfully configured for ialliati01@qub.ac.uk
+
+#<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+#<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+STEP 3
+verdi code setup --config 1code_pw.x/code.yml
+
+#<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+#<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><>
+STEP 4
+in the scripts, we'll use:
+
+code = Code.get_from_string('qe5.0.3_pw@HPC_Lobster')
+builder = code.get_builder()
+
+builder.metadata.options.queue_name= "main"
+builder.metadata.options.resources={'tot_num_mpiprocs': 40}
+builder.metadata.computer = code.get_remote_computer()
+builder.metadata.options.max_wallclock_seconds = 60*10

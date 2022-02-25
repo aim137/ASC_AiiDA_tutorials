@@ -1,0 +1,7 @@
+label: "HPC_Lobster"
+hostname: localhost
+transport: "ssh"
+scheduler: "slurm"
+work_dir: "/scratch/martin/AIIDA_WORK/"
+mpirun_command: "mpirun -n {tot_num_mpiprocs}"
+shebang: "#!/bin/bash"
