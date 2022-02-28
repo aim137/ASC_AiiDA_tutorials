@@ -62,6 +62,10 @@ aiida_datatype_kpoints = kpoints
 #just run the builder. At variance, here we are storing this data in
 #variables called aiida_datatype, which we will use later.
 
+### ><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+### ><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+### Define the functions
+
 def setup_builder_for_calculation(_for_builder_parameters, _for_builder_structure, _for_builder_kpoints):
   """
   Function to set up the builder for a single calculation
@@ -119,7 +123,7 @@ def run_all_calculations(min_factor=0.6,max_factor=1.2,num_factors=5):
   Function to run all the calculations with different cells,
   get the results and compare them. Returns a list of dictonaries
   with the relevant data.
-  Inpupts: 
+  Inputs: 
   min_factor. type float. default 0.6
   max_factor. type float. default 1.2
   num_factors. type int.  default 5
