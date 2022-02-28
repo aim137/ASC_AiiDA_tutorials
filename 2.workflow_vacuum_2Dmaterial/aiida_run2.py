@@ -114,17 +114,24 @@ def stretch_unit_cell(orig_structure,factor):
   return new_structure, newLVs[2][2]
 
 
-def run_all_calculations(list_of_factors=[0.6, 0.8, 1.0, 1.2, 1.4]):
+def run_all_calculations(min_factor=0.6,max_factor=1.2,num_factors=5):
   """
   Function to run all the calculations with different cells,
   get the results and compare them. Returns a list of dictonaries
   with the relevant data.
   Inpupts: 
-  list of factors: type list. Defatult is [0.6, 0.8, 1.0, 1.2, 1.4]
+  min_factor. type float. default 0.6
+  max_factor. type float. default 1.2
+  num_factors. type int.  default 5
   Returns: 
   list of dictionaries. the list runs over calculations.
   each dictionary contains the vacuum and energy of the calculation.
   """
+
+  list_of_factors=[]
+  for i in range(num_factors):
+    new_factor = (max_factor-min_factor)/(num_factors-1)*i+min_factor
+    list_of_factors.append(new_factor)
 
   list_of_results = []
   calculation_counter = 0
