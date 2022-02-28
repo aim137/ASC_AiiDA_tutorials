@@ -11,7 +11,7 @@ verdi computer configure ssh HPC_Lobster
 Info: enter "?" for help
 Info: enter "!" to ignore the default and set no value
 
-#All default values except for "User name" and "SSH key file"
+#All default values except for "User name" and "Port nuimber"
 
 User name [aim]: martin
 Port number [22]: 2222
