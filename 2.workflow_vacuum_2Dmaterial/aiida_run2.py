@@ -195,8 +195,8 @@ with open('summary.txt','w') as file:
 ### ><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
 ### Check your results:
 #list_of_final_results = []
-#list_of_final_results.append({'Vacuum':4.8 ,'Energy':-501.15162505635}) # Units of A and eV
-#list_of_final_results.append({'Vacuum':6.4 ,'Energy':-501.29161905261})
-#list_of_final_results.append({'Vacuum':8.0 ,'Energy':-501.30105664068})
-#list_of_final_results.append({'Vacuum':9.6 ,'Energy':-501.30181951181})
-#list_of_final_results.append({'Vacuum':11.2,'Energy':-501.30169964567})
+#list_of_final_results.append({'Vacuum':4.8,'Energy':-501.15162505635}) # Units of A and eV
+#list_of_final_results.append({'Vacuum':6.0,'Energy':-501.28168186355})
+#list_of_final_results.append({'Vacuum':7.2,'Energy':-501.29921919201})
+#list_of_final_results.append({'Vacuum':8.4,'Energy':-501.30130031862})
+#list_of_final_results.append({'Vacuum':9.6,'Energy':-501.30181951181})
