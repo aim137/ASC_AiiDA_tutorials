@@ -1,4 +1,3 @@
-from aiida.orm.nodes.data.upf import get_pseudos_from_structure
 from aiida.orm.computers import Computer
 from aiida.engine import submit
 from aiida.plugins import DataFactory
@@ -55,7 +54,8 @@ builder.structure = structure
 
 #----------- 3 PSEUDOPOTENTIALS
 
-builder.pseudos = get_pseudos_from_structure(structure, 'SSSP_eff')
+pseudos_family = load_group('SSSP/1.1/PBE/efficiency')
+builder.pseudos = pseudos_family.get_pseudos(structure=structure)
 
 #----------- 4 K-POINT GRID
 

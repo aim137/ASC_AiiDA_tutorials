@@ -1,4 +1,4 @@
-# Tutorial 1
+# Tutorial 1 - Parsing
 
 In this tutorial, we will use Quantum Espresso to calculate the energy of Silicon bulk. First, we will calculate the energy of a given structure (see input file included in the assignment). We will then ask QE to optimise the structure and obtain a new (lower) energy. Finally, we will compare those energies and print the difference.
 This must be done in a single script that executes all steps from start to finish. In the first part of the tutorial, it will be a bash script that will run on an HPC cluster (Young or Lobster). In the second part, we’ll write an Aiida script that runs in your local computer, making use of the same HPC cluster as before.
