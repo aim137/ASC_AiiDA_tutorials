@@ -170,7 +170,7 @@ def run_all_calculations(min_factor=0.6,max_factor=1.2,num_factors=5):
     print(f'Running calculation No. {calculation_counter} out of {len(list_of_factors)} with factor {factor}')
     # Running the builder
     calc_scf = run(builder)
-    sleep(100)
+    sleep(10)
     # get the final energy of the calculation and store it in:
     energy = # complete here!
     print(f'Finished calculation No. {calculation_counter} with energy {energy} eV')
