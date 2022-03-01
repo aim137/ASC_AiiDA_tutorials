@@ -1,4 +1,4 @@
-# ASC_AiiDA_tutorials
+# ASC AiiDA tutorials
 In-house Atomistic Simulations Centre tutorials - Introduction to AiiDA.
 
 We will focus on the very basics of AiiDA - how it works and what it can do. A comparison with Bash is also presented.

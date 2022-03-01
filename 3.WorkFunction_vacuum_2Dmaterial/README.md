@@ -27,6 +27,8 @@ However, I strongly encourage you to have a go at writing the functions yourself
 
 Use `verdi process list -ap1` and note that not only the PwCalculations are there but also the @calcfuncions and @workfunctions we defined. This is because the provenance of those processes is now being tracked.
 
+Use `verdi process status <pk>` with the `pk` of the WorkFunction to see a tree representation of what it does, i.e., what processes it calls.
+
 Use `verdi node graph generate <pk>` with the `pk` of the WorkFunction and that of one PwCalculation. See how the relationship between the different PwCalculations is displayed. 
 
 
