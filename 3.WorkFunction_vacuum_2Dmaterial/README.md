@@ -15,7 +15,7 @@ In principle, we can use the same workflow as in Tutorial 2, with the following 
   - in some cases, we are already using AiiDA data types, e.g., StructureData
   - all python data types (int, float, dict, etc) must be turned into AiiDA data types (Int, Float, Dict, etc) 
 
-Finally, we will also add a new @calcfunction to calculate the energy difference of each run respect to the final run and choose the minimum vacuumm that achieves an energy difference below a given threshold. 
+Finally, we will also add a new @calcfunction to calculate the energy difference of each run respect to the final run and choose the minimum vacuum that achieves an energy difference below a given threshold. 
 
 ## Shortcut instructions
 
