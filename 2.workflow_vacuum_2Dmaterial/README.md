@@ -39,6 +39,6 @@ Start from the file provided and make the following additions
 
 To simplify the tutorial, you will not have to code the whole thing, but rather complete the blanks on a half-coded version of the solution that is provided - look for the string 'Complete'.
 
-However, I strongly encourage you to have a go at writing the subroutines yourself. Look at the code and you'll see where to start. 
+However, I strongly encourage you to have a go at writing the functions yourself. Look at the code and you'll see where to start. 
 
 
