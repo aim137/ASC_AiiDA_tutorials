@@ -35,10 +35,16 @@ Start from the file provided and make the following additions
     - each dictionary contains the energy and the vacuum of the calculation
 - execute the function and plot the results (energy vs vacuum).
 
-## Actual instructions
+## Shortcut instructions
 
-To simplify the tutorial, you will not have to code the whole thing, but rather complete the blanks on a half-coded version of the solution that is provided - look for the string 'Complete'.
+To simplify the tutorial, you will not have to code the whole thing, but rather complete the blanks on a half-coded version of the solution that is provided - look for the string 'complete'.
 
 However, I strongly encourage you to have a go at writing the functions yourself. Look at the code and you'll see where to start. 
 
+## Inspect the results
+
+Use `verdi process list -ap1` and note that, as far as AiiDA is concerned, five PwCalculations is all there is. 
+
+Use `verdi node graph generate <pk>` with the `pk` of one PwCalculation.
+See that the logic behind why we chose to do those calculations is not registered anywhere, nor are the arithmetic operations we did to stretch the cells, e.g., we do not know where the structure came from.
 

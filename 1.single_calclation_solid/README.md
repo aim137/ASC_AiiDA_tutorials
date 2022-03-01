@@ -35,5 +35,9 @@ In this part of the tutorial, you will run calculations in Lobster, without usin
 ## Part B - AiiDA
 
 In this part, follow the same steps as in part 1, but using AiiDA. A minimal Aiida script can be found in `1b.aiida_lobster`. 
-This will run the first (scf) calculation through AiiDA.
-You will have to extend that AiiDA script in order to add the same steps as before, i.e., run a new calculation, compare the energies and print out the result.
+This will run the first (scf) calculation through AiiDA. Run it and inspect the results:
+- use `verdi process list -ap1` to get the `pk` of the calculation
+- open a `verdi shell` and do `my_calc=load_node(<pk>)`
+- explore the object `my_calc` and see how you can get the final energy of the calculation from within its attributes.
+
+You will have to extend that AiiDA script in order to add the same steps as before, i.e., run a new calculation of type `vc-relax`, compare the energies and print out the result.

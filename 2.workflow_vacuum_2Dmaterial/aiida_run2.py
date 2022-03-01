@@ -70,7 +70,7 @@ aiida_datatype_kpoints = kpoints
 ###                                                              ###
 ### or                                                           ### 
 ###                                                              ###
-### use complete the blanks in the following                     ### 
+### complete the blanks in the following solution                ### 
 ###                                                              ###
 ### ############################################################ ### 
 ### ############################################################ ### 
