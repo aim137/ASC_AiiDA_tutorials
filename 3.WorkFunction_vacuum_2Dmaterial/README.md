@@ -21,7 +21,7 @@ Finally, we will also add a new @calcfunction to calculate the energy difference
 
 To simplify the tutorial, you will not have to code the whole thing, but rather complete the blanks on a half-coded version of the solution that is provided - look for the string 'complete'.
 
-However, I strongly encourage you to have a go at writing the functions yourself. Look at the code and you'll see where to start. 
+However, I strongly encourage you to have a go at it yourself with your solution of Tutorial 2 before looking at the code provided here.
 
 ## Inspect the results
 
