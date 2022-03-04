@@ -7,7 +7,7 @@ However, most workflows will typically take hours if not days, and at some point
 Also, should the workflow be interrupted at any point, we would like to pick-up from where it stopped in a future run.
 These are the motivations behind WorkChains:
 - one can *submit* a WorkChain to the daemon and continue using the terminal or shut down the computer.
-- WorkChains can have checkpoints to save any intermediate result before it eventually crashes, and restart from there.
+- a WorkChain can have checkpoints to save any intermediate result before it eventually crashes, and restart it from there.
 
 In this tutorial, we will turn our WorkFunction into a WorkChain.
 
@@ -34,11 +34,11 @@ In principle, we can start from the code in Tutorial 3 and do some changes. The 
 In order to code this yourself, you will need to read the AiiDA documentation on WorkChains as this list of instructions is not exhaustive and does not indicate any syntax explicitely. 
 For the purpose of this tutorial, you will have to complete some statements in the code provided for this tutorial. Search for the string 'complete'.
 
-**I strongly recommend you to identify all the changes described before in the new code.** 🧐
+**I strongly recommend you to identify all the changes described above in the new code.** 🧐
 
 ## Inspect the results
 
-Use `verdi process list -ap1` and note that the WorkChain has submitted all the calculations at once and no longer blocks the termian/python interpreter.
+Use `verdi process list -ap1` and note that the WorkChain has submitted all the calculations at once and no longer blocks the terminal/python interpreter.
 Use `verdi process status <pk>` with the `pk` of the WorkFunction to see a tree representation of what it does, i.e., what processes it calls.
 
 Once the WorkChain has finished, use `verdi node graph generate <pk>` with the `pk` of the WorkChain and that of one PwCalculation. See how the relationship between the different PwCalculations is displayed.
