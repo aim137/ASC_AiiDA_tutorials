@@ -11,7 +11,7 @@ Please note the following warning before proceeding:
 
 Instructions to install AiiDA via a Conda environment can be found [here](https://aiida.readthedocs.io/projects/aiida-core/en/latest/intro/install_conda.html). Continue with the instructions in the section ‘Setup profile’.
 
-After finishing this, you can check tne output of `verdi status` - you should get 5 successful tests. If you get a `ConnectionError` in `rabbitmq`, you'll need to add a line to your `/etc/hosts` file. 
+After finishing this, you can check the output of `verdi status` - you should get 5 successful tests. If you get a `ConnectionError` in `rabbitmq`, you'll need to add a line to your `/etc/hosts` file. 
 
 🔴 Very carefully and making sure you don't change anything else but adding this one line,
 - open the file with superuser permissions, e.g., `sudo nano /etc/hosts`
