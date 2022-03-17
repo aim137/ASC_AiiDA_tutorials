@@ -1,5 +1,5 @@
 from aiida.orm.computers import Computer
-from aiida.engine import submit
+from aiida.engine import submit,run
 from aiida.plugins import DataFactory
 from aiida.plugins import CalculationFactory
 from aiida.orm import Code
@@ -77,7 +77,7 @@ builder.metadata.computer = code.get_remote_computer()
 builder.metadata.options.max_wallclock_seconds = 60*10
 
 #calcjob is the calculation node
-calc_scf = submit(builder)
+calc_scf = run(builder)
 
 
 #Continue this script in the following way
